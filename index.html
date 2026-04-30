@@ -139,134 +139,35 @@
       background: rgba(255,255,255,0.1);
     }
 
-    /* ── HERO ── */
-    .hero {
-      min-height: 100vh;
-      padding: 140px 56px 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      position: relative;
-      border-bottom: 1px solid var(--border);
-    }
+   /* ── HERO ── */
+.hero {
+  min-height: 60vh;
+  padding: 100px 56px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
 
-    .hero-eyebrow {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      color: var(--muted);
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      opacity: 0;
-      animation: fadeUp 0.6s 0.1s forwards;
-    }
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeUp 0.6s 0.1s forwards;
+}
 
-    .hero-name {
-      font-family: var(--font-display);
-      font-size: clamp(64px, 10vw, 140px);
-      font-weight: 900;
-      line-height: 0.92;
-      letter-spacing: -0.02em;
-      color: var(--ink);
-      opacity: 0;
-      animation: fadeUp 0.7s 0.25s forwards;
-    }
-
-    .hero-name em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    .hero-bottom {
-      margin-top: 48px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: 32px;
-      opacity: 0;
-      animation: fadeUp 0.7s 0.45s forwards;
-    }
-
-    .hero-bio {
-      max-width: 480px;
-      font-size: 16px;
-      color: var(--muted);
-      line-height: 1.75;
-      font-weight: 400;
-    }
-
-    .hero-bio strong { color: var(--ink); font-weight: 600; }
-
-    .hero-stats {
-      display: flex;
-      gap: 48px;
-    }
-
-    .stat { text-align: right; }
-
-    .stat-num {
-      font-family: var(--font-display);
-      font-size: 40px;
-      font-weight: 900;
-      color: var(--ink);
-      line-height: 1;
-    }
-
-    .stat-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-top: 4px;
-    }
-
-    .hero-cta {
-      margin-top: 40px;
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      opacity: 0;
-      animation: fadeUp 0.7s 0.6s forwards;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 28px;
-      font-family: var(--font-body);
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-decoration: none;
-      border-radius: 2px;
-      transition: all 0.2s;
-      cursor: pointer;
-      border: none;
-    }
-
-    .btn-primary {
-      background: var(--ink);
-      color: var(--bg);
-    }
-
-    .btn-primary:hover {
-      background: var(--ink2);
-      transform: translateY(-1px);
-    }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--ink);
-      border: 1px solid var(--border);
-    }
-
-    .btn-ghost:hover {
-      border-color: var(--ink);
-      background: #f0f0f0;
-    }
+.hero-bio {
+  max-width: 560px;
+  font-size: 20px;
+  color: var(--muted);
+  line-height: 1.9;
+  font-weight: 400;
+}
 
     /* ── SECTION HEADERS ── */
     .section-label {
@@ -613,29 +514,29 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-eyebrow">MS Marketing Analytics · Rutgers Business School · Open to Summer 2026</div>
-    <h1 class="hero-name">
-      I'm<br>
-      <em>Rohan</em>
-    </h1>
-    <div class="hero-bottom">
-      <p class="hero-bio">
-        Aspiring <span class="hl">Product Manager</span> — looking to make an impact where <span class="hl">data meets technology</span>. I turn ambiguous problems into strategic decisions, and ideas into products that drive <span class="hl">measurable growth</span>.
-      </p>
-      <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-num">3+</div>
-          <div class="stat-label">Live Projects</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">2</div>
-          <div class="stat-label">Live Dashboards</div>
-        </div>
+ <!-- HERO -->
+<section class="hero" style="padding-top: 80px;">
+  <div class="hero-eyebrow" style="font-size: 13px; margin-bottom: 24px;">MS Marketing Analytics · Rutgers Business School · Open to Summer 2026</div>
+  <h1 class="hero-name" style="margin-bottom: 32px;">
+    I'm<br>
+    <em>Rohan</em>
+  </h1>
+  <div class="hero-bottom">
+    <p class="hero-bio" style="font-size: 22px; line-height: 1.9; max-width: 600px;">
+      Aspiring <span class="hl">Product Manager</span> — looking to make an impact where <span class="hl">data meets technology</span>. I turn ambiguous problems into strategic decisions, and ideas into products that drive <span class="hl">measurable growth</span>.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Live Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Live Dashboards</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ABOUT -->
 <section id="about" style="text-align: center; padding: 140px 80px;">
