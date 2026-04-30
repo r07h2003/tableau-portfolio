@@ -935,32 +935,38 @@
       </div>
 
       <!-- Right: phone carousel -->
-      <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-        <div style="position: relative; width: 260px;">
-          <!-- Phone frame -->
-          <div style="background: #1a1a2e; border-radius: 32px; padding: 5px; box-shadow: 0 32px 64px rgba(108,92,231,0.25), 0 0 0 1px rgba(255,255,255,0.1);">
-            <div style="background: #000; border-radius: 28px; overflow: hidden; aspect-ratio: 9/19.5; position: relative;">
-              <div id="roscoCarousel" style="position: relative; width: 100%; height: 100%;">
-                <div class="floof-slide active"><img src="https://raw.githubusercontent.com/r07h2003/Rosco-AI/main/WhatsApp%20Image%202026-04-29%20at%2013.45.48.jpeg" alt="Splash Screen — Calm, gentle care tracking"/></div>
-<div class="rosco-slide active"><img src="https://raw.githubusercontent.com/r07h2003/Rosco-AI/main/WhatsApp%20Image%202026-04-29%20at%2013.45.48.jpeg" alt="Splash Screen — Calm, gentle care tracking"/></div> 
-<div class="rosco-slide active"><img src="https://raw.githubusercontent.com/r07h2003/Rosco-AI/main/WhatsApp%20Image%202026-04-29%20at%2013.45.48.jpeg" alt="Splash Screen — Calm, gentle care tracking"/></div>                
-
-              </div>
-            </div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+  <div style="position: relative; width: 260px;">
+    <!-- Phone frame -->
+    <div style="background: #1a1a2e; border-radius: 32px; padding: 5px; box-shadow: 0 32px 64px rgba(108,92,231,0.25), 0 0 0 1px rgba(255,255,255,0.1);">
+      <div style="background: #000; border-radius: 28px; overflow: hidden; aspect-ratio: 9/19.5; position: relative;">
+        <div id="roscoCarousel" style="position: relative; width: 100%; height: 100%;">
+          
+          <div class="rosco-slide active">
+            <img src="IMAGE_URL_1" alt="Rosco email summary" style="width:100%; height:100%; object-fit:cover;"/>
           </div>
-          <!-- Prev/Next -->
-          <button onclick="roscoPrev()" style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; background: white; border: 1px solid #e2e2e2; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">‹</button>
-          <button onclick="roscoNext()" style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; background: white; border: 1px solid #e2e2e2; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">›</button>
-        </div>
+          <div class="rosco-slide">
+            <img src="IMAGE_URL_2" alt="Rosco daily briefing" style="width:100%; height:100%; object-fit:cover;"/>
+          </div>
+          <div class="rosco-slide">
+            <img src="IMAGE_URL_3" alt="Rosco introduction" style="width:100%; height:100%; object-fit:cover;"/>
+          </div>
 
-        <!-- Dots -->
-        <div style="display: flex; gap: 6px; align-items: center;">
-          <div class="floof-dot active" onclick="floofGo(0)"></div>
-<div class="floof-dot " onclick="floofGo(1)"></div>
-<div class="floof-dot " onclick="floofGo(2)"></div>
-<div class="floof-dot " onclick="floofGo(3)"></div>
-<div class="floof-dot " onclick="floofGo(4)"></div>
-<div class="floof-dot " onclick="floofGo(5)"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Prev/Next -->
+    <button onclick="roscoPrev()" style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; background: white; border: 1px solid #e2e2e2; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">‹</button>
+    <button onclick="roscoNext()" style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; background: white; border: 1px solid #e2e2e2; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">›</button>
+  </div>
+
+  <!-- Dots -->
+  <div style="display: flex; gap: 6px; align-items: center;">
+    <div class="rosco-dot active" onclick="roscoGo(0)"></div>
+    <div class="rosco-dot" onclick="roscoGo(1)"></div>
+    <div class="rosco-dot" onclick="roscoGo(2)"></div>
+  </div>
+</div>
 
         </div>
 
