@@ -187,17 +187,9 @@ nav {
   justify-content: flex-start;
   position: relative;
   border-bottom: 1px solid var(--border);
+  background-color: #ffffff;
 }
-.hero-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--muted);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  opacity: 0;
-  animation: fadeUp 0.6s 0.1s forwards;
-}
+
 .hero-name {
   font-family: var(--font-display);
   font-size: clamp(64px, 10vw, 140px);
@@ -207,23 +199,19 @@ nav {
   color: var(--ink);
   opacity: 0;
   animation: fadeUp 0.7s 0.25s forwards;
+  -webkit-text-stroke: 0.5px var(--ink);
 }
+
 .hero-name em {
   font-style: italic;
   color: var(--accent);
+  font-weight: 900;
+  -webkit-text-stroke: 0.5px var(--accent);
 }
-.hero-bottom {
-  margin-top: 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 32px;
-  opacity: 0;
-  animation: fadeUp 0.7s 0.45s forwards;
-}
+
 .hero-bio {
   max-width: 560px;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   color: var(--muted);
   line-height: 1.9;
@@ -611,12 +599,12 @@ nav {
 <section class="hero">
   <div class="hero-eyebrow">MS Marketing Analytics · Rutgers Business School · Open to Summer 2026</div>
   <h1 class="hero-name">
-    I'm<br>
+    <span class="hero-im">I'm</span><br>
     <em>Rohan</em>
   </h1>
   <div class="hero-bottom">
     <p class="hero-bio">
-      Aspiring <span class="hl">Product Manager</span> ,looking to make an impact where <span class="hl">data meets technology</span>. I turn ambiguous problems into strategic decisions, and ideas into products that drive <span class="hl">measurable growth</span>.
+      Aspiring <span class="hl">Product Manager</span>, looking to make an impact where <span class="hl">data meets technology</span>. I turn ambiguous problems into strategic decisions, and ideas into products that drive <span class="hl">measurable growth</span>.
     </p>
     <div class="hero-stats">
       <div class="stat">
